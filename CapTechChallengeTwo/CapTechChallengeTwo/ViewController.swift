@@ -16,9 +16,16 @@ class ViewController: UIViewController {
 
     let dataManager: EarthquakeDataManager = EarthquakeDataManager.shared!
 
+    dataManager.clearEarthquakeData()
     dataManager.requestEarthquakeData() { data in
       if let data = data {
-        self.parseJSON(data: data)
+        dataManager.parseJSON(data: data)
+      } else {
+        let alert = UIAlertController(title: "Network Error",
+                                      message: "We were unable to retrive the data, please check your network connection and try again",
+                                      preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
       }
     }
   }
@@ -27,34 +34,7 @@ class ViewController: UIViewController {
     super.didReceiveMemoryWarning()
   }
 
-  func parseJSON(data: Data) {
-    let json = try? JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary
-    let theDataArray = json??["features"] as! NSArray
-
-    let managedContext = coreDataStack.persistentContainer.viewContext
-
-    for element in theDataArray {
-      let asDict      = element as? NSDictionary
-      let properties  = asDict?["properties"] as! NSDictionary
-      let geometry    = asDict?["geometry"] as! NSDictionary
-      let coordinates = geometry["coordinates"] as! NSArray
-      let adjTime     = (properties["time"] as! Int) / 1000
-
-      let theEarthquake  = Earthquake(context: managedContext)
-
-      theEarthquake.title      = (properties["title"] as! String)
-      theEarthquake.detailsURL = (properties["url"] as! String)
-      theEarthquake.time       = Date(timeIntervalSince1970: TimeInterval(adjTime)) as NSDate
-      theEarthquake.latitude   = coordinates[1] as! Double
-      theEarthquake.longitude  = coordinates[0] as! Double
-
-
-    }
-
-    coreDataStack.saveContext()
-
-  }
-  
+    
   @IBAction func imageAttribution(_ sender: Any) {
 
   }

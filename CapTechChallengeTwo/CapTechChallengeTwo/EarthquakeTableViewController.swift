@@ -10,94 +10,114 @@ import UIKit
 
 class EarthquakeTableViewController: UITableViewController {
 
-    var earthquakes = [Earthquake]()
+  var earthquakes = [Earthquake]()
 
-    override func viewDidLoad() {
-      super.viewDidLoad()
+  var refresher: UIRefreshControl!
 
-      let managedContext = coreDataStack.persistentContainer.viewContext
+  let dataManager: EarthquakeDataManager = EarthquakeDataManager.shared!
 
-      do {
-        let result = try managedContext.fetch(Earthquake.fetchRequest())
-        earthquakes = result as! [Earthquake]
-      } catch {
-        print("Error")
+  override func viewDidLoad() {
+    super.viewDidLoad()
+
+    refresher = UIRefreshControl()
+    refresher.attributedTitle = NSAttributedString(string: "Pull to refresh")
+    refresher.addTarget(self, action: #selector(EarthquakeTableViewController.refreshData), for: UIControlEvents.valueChanged)
+    tableView.addSubview(refresher!)
+
+    updateDataArray()
+
+//    self.navigationItem.rightBarButtonItem = self.editButtonItem
+  }
+
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+
+  override func numberOfSections(in tableView: UITableView) -> Int {
+    // #warning Incomplete implementation, return the number of sections
+    return 1
+  }
+
+  override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return earthquakes.count
+  }
+
+
+  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! CustomTableViewCell
+    let quake = earthquakes[indexPath.row]
+
+    cell.titleLabel?.text = "\(quake.title!)"
+    cell.dateLabel?.text = String(describing: quake.time)
+    cell.latLngLabel?.text = "Location: \(quake.latitude), \(quake.longitude)"
+
+    if quake.magnitude > 0.0 {
+      switch quake.magnitude {
+      case _ where quake.magnitude >= 4.0:
+        cell.titleLabel?.textColor = UIColor.FlatColor.Red.MildSauce
+      case _ where quake.magnitude >= 2.5:
+        cell.titleLabel?.textColor = UIColor.FlatColor.Red.HotTomato
+      default:
+        break
+      }
+    }
+
+    return cell
+  }
+
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    if let url = NSURL(string: earthquakes[indexPath.row].detailsURL!) {
+      UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+    }
+  }
+
+  func updateDataArray() {
+    let managedContext = coreDataStack.persistentContainer.viewContext
+
+    do {
+      let result = try managedContext.fetch(Earthquake.fetchRequest())
+      earthquakes = result as! [Earthquake]
+      print("worked \(earthquakes.count)")
+    } catch {
+      print("Error")
+    }
+  }
+
+
+  func refreshData(_ refreshControl: UIRefreshControl) {
+      self.dataManager.requestEarthquakeData() { data in
+        if let data = data {
+          self.dataManager.parseJSON(data: data, shouldUpdateRecords: true)
+        } else {
+          let alert = UIAlertController(title: "Network Error",
+                                        message: "We were unable to retrive the data, please check your network connection and try again",
+                                        preferredStyle: UIAlertControllerStyle.alert)
+          alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
+          self.present(alert, animated: true, completion: nil)
+        }
       }
 
-      self.navigationItem.rightBarButtonItem = self.editButtonItem
+    updateDataArray()
+    tableView.reloadData()
+    refreshControl.endRefreshing()
+  }
+
+
+  override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    if editingStyle == .delete {
+      earthquakes.remove(at: indexPath.row)
+      tableView.deleteRows(at: [indexPath], with: .fade)
     }
+  }
 
-    override func didReceiveMemoryWarning() {
-      super.didReceiveMemoryWarning()
-      // Dispose of any resources that can be recreated.
+}
+
+extension UIColor {
+  struct FlatColor {
+    struct Red {
+      static let HotTomato = UIColor(red:1.00, green:0.00, blue:0.00, alpha:1.0)
+      static let MildSauce = UIColor(red:1.00, green:0.50, blue:0.00, alpha:1.0)
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-      // #warning Incomplete implementation, return the number of sections
-      return 1
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-      return earthquakes.count
-    }
-
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-      let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-      for quake in earthquakes {
-        cell.textLabel?.text = earthquakes[indexPath.row]
-      }
-
-
-      return cell
-    }
-
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  }
 }
