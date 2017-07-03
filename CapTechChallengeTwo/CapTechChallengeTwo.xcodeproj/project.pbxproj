@@ -20,6 +20,10 @@
 		4C010E0D1F07005A008184C0 /* AppGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010E0C1F07005A008184C0 /* AppGlobals.swift */; };
 		4C010E0F1F07048C008184C0 /* EarthquakeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010E0E1F07048C008184C0 /* EarthquakeTableViewController.swift */; };
 		4C3AD1091F0AAA83007BE9B8 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AD1081F0AAA83007BE9B8 /* CustomTableViewCell.swift */; };
+		4C3AD10C1F0AE98A007BE9B8 /* ArrayEarthquake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AD10B1F0AE98A007BE9B8 /* ArrayEarthquake.swift */; };
+		4C3AD10E1F0AED58007BE9B8 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AD10D1F0AED58007BE9B8 /* Color.swift */; };
+		4C3AD1101F0AFED3007BE9B8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AD10F1F0AFED3007BE9B8 /* MapViewController.swift */; };
+		4C3AD11A1F0B02FB007BE9B8 /* EarthquakeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AD1181F0B02FB007BE9B8 /* EarthquakeAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		4C010E0C1F07005A008184C0 /* AppGlobals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGlobals.swift; sourceTree = "<group>"; };
 		4C010E0E1F07048C008184C0 /* EarthquakeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthquakeTableViewController.swift; sourceTree = "<group>"; };
 		4C3AD1081F0AAA83007BE9B8 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		4C3AD10B1F0AE98A007BE9B8 /* ArrayEarthquake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayEarthquake.swift; sourceTree = "<group>"; };
+		4C3AD10D1F0AED58007BE9B8 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4C3AD10F1F0AFED3007BE9B8 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4C3AD1181F0B02FB007BE9B8 /* EarthquakeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EarthquakeAnnotation.swift; path = ../EarthquakeAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,8 @@
 		4C010DC41F06DF50008184C0 /* CapTechChallengeTwo */ = {
 			isa = PBXGroup;
 			children = (
+				4C3AD1111F0B01A1007BE9B8 /* Objects */,
+				4C3AD10A1F0AE966007BE9B8 /* Extensions */,
 				4C010E0B1F070047008184C0 /* AppGlobals */,
 				4C010DFF1F06EE06008184C0 /* Networking */,
 				4C010DF61F06ED63008184C0 /* AppDelegate */,
@@ -154,6 +164,7 @@
 				4C010DC71F06DF50008184C0 /* ViewController.swift */,
 				4C010E0E1F07048C008184C0 /* EarthquakeTableViewController.swift */,
 				4C3AD1081F0AAA83007BE9B8 /* CustomTableViewCell.swift */,
+				4C3AD10F1F0AFED3007BE9B8 /* MapViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -213,6 +224,23 @@
 				4C010E0C1F07005A008184C0 /* AppGlobals.swift */,
 			);
 			name = AppGlobals;
+			sourceTree = "<group>";
+		};
+		4C3AD10A1F0AE966007BE9B8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4C3AD10B1F0AE98A007BE9B8 /* ArrayEarthquake.swift */,
+				4C3AD10D1F0AED58007BE9B8 /* Color.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		4C3AD1111F0B01A1007BE9B8 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				4C3AD1181F0B02FB007BE9B8 /* EarthquakeAnnotation.swift */,
+			);
+			name = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,8 +380,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C3AD11A1F0B02FB007BE9B8 /* EarthquakeAnnotation.swift in Sources */,
+				4C3AD1101F0AFED3007BE9B8 /* MapViewController.swift in Sources */,
 				4C010E011F06FAE1008184C0 /* CoreDataStack.swift in Sources */,
+				4C3AD10C1F0AE98A007BE9B8 /* ArrayEarthquake.swift in Sources */,
 				4C010DCE1F06DF50008184C0 /* CapTechChallengeTwo.xcdatamodeld in Sources */,
+				4C3AD10E1F0AED58007BE9B8 /* Color.swift in Sources */,
 				4C3AD1091F0AAA83007BE9B8 /* CustomTableViewCell.swift in Sources */,
 				4C010DC81F06DF50008184C0 /* ViewController.swift in Sources */,
 				4C010E0F1F07048C008184C0 /* EarthquakeTableViewController.swift in Sources */,

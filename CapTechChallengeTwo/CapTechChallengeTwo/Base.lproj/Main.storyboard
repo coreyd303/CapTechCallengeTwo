@@ -95,7 +95,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="94"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RlJ-EY-O2l" id="bSl-0V-psg">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="93.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PI6-Ne-eMm">
@@ -141,10 +141,45 @@
                             <outlet property="delegate" destination="g8Q-Ur-0k8" id="8kl-9J-U2F"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="0f8-A1-lVP" kind="show" identifier="mapViewSegue" id="ses-w2-o8S"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EsD-6K-Nx0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.79999999999995" y="103.89805097451276"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="H8x-Ud-1aL">
+            <objects>
+                <viewController storyboardIdentifier="mapView" title="Map" id="0f8-A1-lVP" customClass="MapViewController" customModule="CapTechChallengeTwo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kbd-gH-Xek"/>
+                        <viewControllerLayoutGuide type="bottom" id="jZc-cG-Wua"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Ac-dG-9i0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kvv-0j-M0G">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kvv-0j-M0G" firstAttribute="top" secondItem="Kbd-gH-Xek" secondAttribute="bottom" id="A3G-0g-gEV"/>
+                            <constraint firstItem="kvv-0j-M0G" firstAttribute="leading" secondItem="8Ac-dG-9i0" secondAttribute="leading" id="F0z-WJ-UCm"/>
+                            <constraint firstItem="jZc-cG-Wua" firstAttribute="top" secondItem="kvv-0j-M0G" secondAttribute="bottom" id="YGX-IW-GVl"/>
+                            <constraint firstAttribute="trailing" secondItem="kvv-0j-M0G" secondAttribute="trailing" id="iWd-qO-Yeg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="kvv-0j-M0G" id="cgC-Zx-Fwb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="go0-Rl-W30" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.79999999999995" y="859.52023988005999"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cc8-Js-58D">

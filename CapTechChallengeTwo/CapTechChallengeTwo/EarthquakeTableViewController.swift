@@ -19,14 +19,19 @@ class EarthquakeTableViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    let mapButton : UIBarButtonItem = UIBarButtonItem(title: "USGS Map", style: UIBarButtonItemStyle.plain, target: self, action: #selector(EarthquakeTableViewController.openMap))
+    self.navigationItem.rightBarButtonItem = mapButton
+
     refresher = UIRefreshControl()
     refresher.attributedTitle = NSAttributedString(string: "Pull to refresh")
     refresher.addTarget(self, action: #selector(EarthquakeTableViewController.refreshData), for: UIControlEvents.valueChanged)
     tableView.addSubview(refresher!)
 
     updateDataArray()
+  }
 
-//    self.navigationItem.rightBarButtonItem = self.editButtonItem
+  func openMap() {
+    performSegue(withIdentifier: "mapViewSegue", sender: nil)
   }
 
   override func didReceiveMemoryWarning() {
@@ -77,7 +82,10 @@ class EarthquakeTableViewController: UITableViewController {
 
     do {
       let result = try managedContext.fetch(Earthquake.fetchRequest())
-      earthquakes = result as! [Earthquake]
+      let array = result as! [Earthquake]
+
+      earthquakes = array.sortByDate()
+
       print("worked \(earthquakes.count)")
     } catch {
       print("Error")
@@ -113,11 +121,3 @@ class EarthquakeTableViewController: UITableViewController {
 
 }
 
-extension UIColor {
-  struct FlatColor {
-    struct Red {
-      static let HotTomato = UIColor(red:1.00, green:0.00, blue:0.00, alpha:1.0)
-      static let MildSauce = UIColor(red:1.00, green:0.50, blue:0.00, alpha:1.0)
-    }
-  }
-}
