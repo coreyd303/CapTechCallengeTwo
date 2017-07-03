@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4C010D2E1F058F0D008184C0"
+               BlueprintIdentifier = "4C010DC11F06DF50008184C0"
                BuildableName = "CapTechChallengeTwo.app"
                BlueprintName = "CapTechChallengeTwo"
                ReferencedContainer = "container:CapTechChallengeTwo.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4C010D421F058F0D008184C0"
+               BlueprintIdentifier = "4C010DD81F06DF50008184C0"
                BuildableName = "CapTechChallengeTwoTests.xctest"
                BlueprintName = "CapTechChallengeTwoTests"
                ReferencedContainer = "container:CapTechChallengeTwo.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4C010D4D1F058F0D008184C0"
+               BlueprintIdentifier = "4C010DE31F06DF50008184C0"
                BuildableName = "CapTechChallengeTwoUITests.xctest"
                BlueprintName = "CapTechChallengeTwoUITests"
                ReferencedContainer = "container:CapTechChallengeTwo.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4C010D2E1F058F0D008184C0"
+            BlueprintIdentifier = "4C010DC11F06DF50008184C0"
             BuildableName = "CapTechChallengeTwo.app"
             BlueprintName = "CapTechChallengeTwo"
             ReferencedContainer = "container:CapTechChallengeTwo.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4C010D2E1F058F0D008184C0"
+            BlueprintIdentifier = "4C010DC11F06DF50008184C0"
             BuildableName = "CapTechChallengeTwo.app"
             BlueprintName = "CapTechChallengeTwo"
             ReferencedContainer = "container:CapTechChallengeTwo.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4C010D2E1F058F0D008184C0"
+            BlueprintIdentifier = "4C010DC11F06DF50008184C0"
             BuildableName = "CapTechChallengeTwo.app"
             BlueprintName = "CapTechChallengeTwo"
             ReferencedContainer = "container:CapTechChallengeTwo.xcodeproj">

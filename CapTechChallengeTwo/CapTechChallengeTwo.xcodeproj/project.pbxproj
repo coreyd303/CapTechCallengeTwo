@@ -7,70 +7,74 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C010D331F058F0D008184C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010D321F058F0D008184C0 /* AppDelegate.swift */; };
-		4C010D351F058F0D008184C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010D341F058F0D008184C0 /* ViewController.swift */; };
-		4C010D381F058F0D008184C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C010D361F058F0D008184C0 /* Main.storyboard */; };
-		4C010D3A1F058F0D008184C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C010D391F058F0D008184C0 /* Assets.xcassets */; };
-		4C010D3D1F058F0D008184C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C010D3B1F058F0D008184C0 /* LaunchScreen.storyboard */; };
-		4C010D481F058F0D008184C0 /* CapTechChallengeTwoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010D471F058F0D008184C0 /* CapTechChallengeTwoTests.swift */; };
-		4C010D531F058F0D008184C0 /* CapTechChallengeTwoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010D521F058F0D008184C0 /* CapTechChallengeTwoUITests.swift */; };
-		4C010D621F059B48008184C0 /* earthquakeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010D611F059B48008184C0 /* earthquakeTableViewController.swift */; };
-		4C010D651F05A16F008184C0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C010D631F05A16F008184C0 /* Model.xcdatamodeld */; };
-		4C010DA51F05A5D6008184C0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010DA41F05A5D6008184C0 /* CoreDataStack.swift */; };
+		4C010DC61F06DF50008184C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010DC51F06DF50008184C0 /* AppDelegate.swift */; };
+		4C010DC81F06DF50008184C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010DC71F06DF50008184C0 /* ViewController.swift */; };
+		4C010DCB1F06DF50008184C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C010DC91F06DF50008184C0 /* Main.storyboard */; };
+		4C010DCE1F06DF50008184C0 /* CapTechChallengeTwo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C010DCC1F06DF50008184C0 /* CapTechChallengeTwo.xcdatamodeld */; };
+		4C010DD01F06DF50008184C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C010DCF1F06DF50008184C0 /* Assets.xcassets */; };
+		4C010DD31F06DF50008184C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C010DD11F06DF50008184C0 /* LaunchScreen.storyboard */; };
+		4C010DDE1F06DF50008184C0 /* CapTechChallengeTwoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010DDD1F06DF50008184C0 /* CapTechChallengeTwoTests.swift */; };
+		4C010DE91F06DF50008184C0 /* CapTechChallengeTwoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010DE81F06DF50008184C0 /* CapTechChallengeTwoUITests.swift */; };
+		4C010DFE1F06EDED008184C0 /* EarthquakeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010DFD1F06EDED008184C0 /* EarthquakeDataManager.swift */; };
+		4C010E011F06FAE1008184C0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010E001F06FAE1008184C0 /* CoreDataStack.swift */; };
+		4C010E0D1F07005A008184C0 /* AppGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010E0C1F07005A008184C0 /* AppGlobals.swift */; };
+		4C010E0F1F07048C008184C0 /* EarthquakeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010E0E1F07048C008184C0 /* EarthquakeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4C010D441F058F0D008184C0 /* PBXContainerItemProxy */ = {
+		4C010DDA1F06DF50008184C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4C010D271F058F0D008184C0 /* Project object */;
+			containerPortal = 4C010DBA1F06DF4F008184C0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4C010D2E1F058F0D008184C0;
+			remoteGlobalIDString = 4C010DC11F06DF50008184C0;
 			remoteInfo = CapTechChallengeTwo;
 		};
-		4C010D4F1F058F0D008184C0 /* PBXContainerItemProxy */ = {
+		4C010DE51F06DF50008184C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4C010D271F058F0D008184C0 /* Project object */;
+			containerPortal = 4C010DBA1F06DF4F008184C0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4C010D2E1F058F0D008184C0;
+			remoteGlobalIDString = 4C010DC11F06DF50008184C0;
 			remoteInfo = CapTechChallengeTwo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4C010D2F1F058F0D008184C0 /* CapTechChallengeTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapTechChallengeTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C010D321F058F0D008184C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C010D341F058F0D008184C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4C010D371F058F0D008184C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4C010D391F058F0D008184C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4C010D3C1F058F0D008184C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4C010D3E1F058F0D008184C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C010D431F058F0D008184C0 /* CapTechChallengeTwoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapTechChallengeTwoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C010D471F058F0D008184C0 /* CapTechChallengeTwoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapTechChallengeTwoTests.swift; sourceTree = "<group>"; };
-		4C010D491F058F0D008184C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C010D4E1F058F0D008184C0 /* CapTechChallengeTwoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapTechChallengeTwoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C010D521F058F0D008184C0 /* CapTechChallengeTwoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapTechChallengeTwoUITests.swift; sourceTree = "<group>"; };
-		4C010D541F058F0D008184C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C010D611F059B48008184C0 /* earthquakeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = earthquakeTableViewController.swift; sourceTree = "<group>"; };
-		4C010D641F05A16F008184C0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		4C010DA41F05A5D6008184C0 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		4C010DC21F06DF50008184C0 /* CapTechChallengeTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapTechChallengeTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C010DC51F06DF50008184C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C010DC71F06DF50008184C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C010DCA1F06DF50008184C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C010DCD1F06DF50008184C0 /* CapTechChallengeTwo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CapTechChallengeTwo.xcdatamodel; sourceTree = "<group>"; };
+		4C010DCF1F06DF50008184C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C010DD21F06DF50008184C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C010DD41F06DF50008184C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C010DD91F06DF50008184C0 /* CapTechChallengeTwoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapTechChallengeTwoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C010DDD1F06DF50008184C0 /* CapTechChallengeTwoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapTechChallengeTwoTests.swift; sourceTree = "<group>"; };
+		4C010DDF1F06DF50008184C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C010DE41F06DF50008184C0 /* CapTechChallengeTwoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapTechChallengeTwoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C010DE81F06DF50008184C0 /* CapTechChallengeTwoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapTechChallengeTwoUITests.swift; sourceTree = "<group>"; };
+		4C010DEA1F06DF50008184C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C010DFD1F06EDED008184C0 /* EarthquakeDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthquakeDataManager.swift; sourceTree = "<group>"; };
+		4C010E001F06FAE1008184C0 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		4C010E0C1F07005A008184C0 /* AppGlobals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGlobals.swift; sourceTree = "<group>"; };
+		4C010E0E1F07048C008184C0 /* EarthquakeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthquakeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4C010D2C1F058F0D008184C0 /* Frameworks */ = {
+		4C010DBF1F06DF50008184C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C010D401F058F0D008184C0 /* Frameworks */ = {
+		4C010DD61F06DF50008184C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C010D4B1F058F0D008184C0 /* Frameworks */ = {
+		4C010DE11F06DF50008184C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,86 +84,144 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4C010D261F058F0D008184C0 = {
+		4C010DB91F06DF4F008184C0 = {
 			isa = PBXGroup;
 			children = (
-				4C010D311F058F0D008184C0 /* CapTechChallengeTwo */,
-				4C010D461F058F0D008184C0 /* CapTechChallengeTwoTests */,
-				4C010D511F058F0D008184C0 /* CapTechChallengeTwoUITests */,
-				4C010D301F058F0D008184C0 /* Products */,
+				4C010DC41F06DF50008184C0 /* CapTechChallengeTwo */,
+				4C010DDC1F06DF50008184C0 /* CapTechChallengeTwoTests */,
+				4C010DE71F06DF50008184C0 /* CapTechChallengeTwoUITests */,
+				4C010DC31F06DF50008184C0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4C010D301F058F0D008184C0 /* Products */ = {
+		4C010DC31F06DF50008184C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4C010D2F1F058F0D008184C0 /* CapTechChallengeTwo.app */,
-				4C010D431F058F0D008184C0 /* CapTechChallengeTwoTests.xctest */,
-				4C010D4E1F058F0D008184C0 /* CapTechChallengeTwoUITests.xctest */,
+				4C010DC21F06DF50008184C0 /* CapTechChallengeTwo.app */,
+				4C010DD91F06DF50008184C0 /* CapTechChallengeTwoTests.xctest */,
+				4C010DE41F06DF50008184C0 /* CapTechChallengeTwoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4C010D311F058F0D008184C0 /* CapTechChallengeTwo */ = {
+		4C010DC41F06DF50008184C0 /* CapTechChallengeTwo */ = {
 			isa = PBXGroup;
 			children = (
-				4C010D661F05A17A008184C0 /* Data */,
-				4C010D601F0599EB008184C0 /* View Controllers */,
-				4C010D321F058F0D008184C0 /* AppDelegate.swift */,
-				4C010D341F058F0D008184C0 /* ViewController.swift */,
-				4C010D361F058F0D008184C0 /* Main.storyboard */,
-				4C010D391F058F0D008184C0 /* Assets.xcassets */,
-				4C010D3B1F058F0D008184C0 /* LaunchScreen.storyboard */,
-				4C010D3E1F058F0D008184C0 /* Info.plist */,
+				4C010E0B1F070047008184C0 /* AppGlobals */,
+				4C010DFF1F06EE06008184C0 /* Networking */,
+				4C010DF61F06ED63008184C0 /* AppDelegate */,
+				4C010DFB1F06EDB2008184C0 /* Data */,
+				4C010DF91F06ED93008184C0 /* Resources */,
+				4C010DFA1F06ED9B008184C0 /* Supporting Files */,
+				4C010DFC1F06EDBB008184C0 /* Utilites */,
+				4C010DF71F06ED72008184C0 /* View Controllers */,
+				4C010DF81F06ED82008184C0 /* Views */,
 			);
 			path = CapTechChallengeTwo;
 			sourceTree = "<group>";
 		};
-		4C010D461F058F0D008184C0 /* CapTechChallengeTwoTests */ = {
+		4C010DDC1F06DF50008184C0 /* CapTechChallengeTwoTests */ = {
 			isa = PBXGroup;
 			children = (
-				4C010D471F058F0D008184C0 /* CapTechChallengeTwoTests.swift */,
-				4C010D491F058F0D008184C0 /* Info.plist */,
+				4C010DDD1F06DF50008184C0 /* CapTechChallengeTwoTests.swift */,
+				4C010DDF1F06DF50008184C0 /* Info.plist */,
 			);
 			path = CapTechChallengeTwoTests;
 			sourceTree = "<group>";
 		};
-		4C010D511F058F0D008184C0 /* CapTechChallengeTwoUITests */ = {
+		4C010DE71F06DF50008184C0 /* CapTechChallengeTwoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				4C010D521F058F0D008184C0 /* CapTechChallengeTwoUITests.swift */,
-				4C010D541F058F0D008184C0 /* Info.plist */,
+				4C010DE81F06DF50008184C0 /* CapTechChallengeTwoUITests.swift */,
+				4C010DEA1F06DF50008184C0 /* Info.plist */,
 			);
 			path = CapTechChallengeTwoUITests;
 			sourceTree = "<group>";
 		};
-		4C010D601F0599EB008184C0 /* View Controllers */ = {
+		4C010DF61F06ED63008184C0 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				4C010D611F059B48008184C0 /* earthquakeTableViewController.swift */,
+				4C010DC51F06DF50008184C0 /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		4C010DF71F06ED72008184C0 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C010DC71F06DF50008184C0 /* ViewController.swift */,
+				4C010E0E1F07048C008184C0 /* EarthquakeTableViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
-		4C010D661F05A17A008184C0 /* Data */ = {
+		4C010DF81F06ED82008184C0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4C010D631F05A16F008184C0 /* Model.xcdatamodeld */,
-				4C010DA41F05A5D6008184C0 /* CoreDataStack.swift */,
+				4C010DD11F06DF50008184C0 /* LaunchScreen.storyboard */,
+				4C010DC91F06DF50008184C0 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4C010DF91F06ED93008184C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C010DCF1F06DF50008184C0 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4C010DFA1F06ED9B008184C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C010DD41F06DF50008184C0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C010DFB1F06EDB2008184C0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4C010DCC1F06DF50008184C0 /* CapTechChallengeTwo.xcdatamodeld */,
+				4C010E001F06FAE1008184C0 /* CoreDataStack.swift */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		4C010DFC1F06EDBB008184C0 /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				4C010DFD1F06EDED008184C0 /* EarthquakeDataManager.swift */,
+			);
+			name = Utilites;
+			sourceTree = "<group>";
+		};
+		4C010DFF1F06EE06008184C0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		4C010E0B1F070047008184C0 /* AppGlobals */ = {
+			isa = PBXGroup;
+			children = (
+				4C010E0C1F07005A008184C0 /* AppGlobals.swift */,
+			);
+			name = AppGlobals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4C010D2E1F058F0D008184C0 /* CapTechChallengeTwo */ = {
+		4C010DC11F06DF50008184C0 /* CapTechChallengeTwo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C010D571F058F0D008184C0 /* Build configuration list for PBXNativeTarget "CapTechChallengeTwo" */;
+			buildConfigurationList = 4C010DED1F06DF50008184C0 /* Build configuration list for PBXNativeTarget "CapTechChallengeTwo" */;
 			buildPhases = (
-				4C010D2B1F058F0D008184C0 /* Sources */,
-				4C010D2C1F058F0D008184C0 /* Frameworks */,
-				4C010D2D1F058F0D008184C0 /* Resources */,
+				4C010DBE1F06DF50008184C0 /* Sources */,
+				4C010DBF1F06DF50008184C0 /* Frameworks */,
+				4C010DC01F06DF50008184C0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -167,75 +229,75 @@
 			);
 			name = CapTechChallengeTwo;
 			productName = CapTechChallengeTwo;
-			productReference = 4C010D2F1F058F0D008184C0 /* CapTechChallengeTwo.app */;
+			productReference = 4C010DC21F06DF50008184C0 /* CapTechChallengeTwo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4C010D421F058F0D008184C0 /* CapTechChallengeTwoTests */ = {
+		4C010DD81F06DF50008184C0 /* CapTechChallengeTwoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C010D5A1F058F0D008184C0 /* Build configuration list for PBXNativeTarget "CapTechChallengeTwoTests" */;
+			buildConfigurationList = 4C010DF01F06DF50008184C0 /* Build configuration list for PBXNativeTarget "CapTechChallengeTwoTests" */;
 			buildPhases = (
-				4C010D3F1F058F0D008184C0 /* Sources */,
-				4C010D401F058F0D008184C0 /* Frameworks */,
-				4C010D411F058F0D008184C0 /* Resources */,
+				4C010DD51F06DF50008184C0 /* Sources */,
+				4C010DD61F06DF50008184C0 /* Frameworks */,
+				4C010DD71F06DF50008184C0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4C010D451F058F0D008184C0 /* PBXTargetDependency */,
+				4C010DDB1F06DF50008184C0 /* PBXTargetDependency */,
 			);
 			name = CapTechChallengeTwoTests;
 			productName = CapTechChallengeTwoTests;
-			productReference = 4C010D431F058F0D008184C0 /* CapTechChallengeTwoTests.xctest */;
+			productReference = 4C010DD91F06DF50008184C0 /* CapTechChallengeTwoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4C010D4D1F058F0D008184C0 /* CapTechChallengeTwoUITests */ = {
+		4C010DE31F06DF50008184C0 /* CapTechChallengeTwoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C010D5D1F058F0D008184C0 /* Build configuration list for PBXNativeTarget "CapTechChallengeTwoUITests" */;
+			buildConfigurationList = 4C010DF31F06DF50008184C0 /* Build configuration list for PBXNativeTarget "CapTechChallengeTwoUITests" */;
 			buildPhases = (
-				4C010D4A1F058F0D008184C0 /* Sources */,
-				4C010D4B1F058F0D008184C0 /* Frameworks */,
-				4C010D4C1F058F0D008184C0 /* Resources */,
+				4C010DE01F06DF50008184C0 /* Sources */,
+				4C010DE11F06DF50008184C0 /* Frameworks */,
+				4C010DE21F06DF50008184C0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4C010D501F058F0D008184C0 /* PBXTargetDependency */,
+				4C010DE61F06DF50008184C0 /* PBXTargetDependency */,
 			);
 			name = CapTechChallengeTwoUITests;
 			productName = CapTechChallengeTwoUITests;
-			productReference = 4C010D4E1F058F0D008184C0 /* CapTechChallengeTwoUITests.xctest */;
+			productReference = 4C010DE41F06DF50008184C0 /* CapTechChallengeTwoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4C010D271F058F0D008184C0 /* Project object */ = {
+		4C010DBA1F06DF4F008184C0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Corey Davis";
 				TargetAttributes = {
-					4C010D2E1F058F0D008184C0 = {
+					4C010DC11F06DF50008184C0 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 3Q4M6DQ9WM;
 						ProvisioningStyle = Automatic;
 					};
-					4C010D421F058F0D008184C0 = {
+					4C010DD81F06DF50008184C0 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 3Q4M6DQ9WM;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 4C010D2E1F058F0D008184C0;
+						TestTargetID = 4C010DC11F06DF50008184C0;
 					};
-					4C010D4D1F058F0D008184C0 = {
+					4C010DE31F06DF50008184C0 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 3Q4M6DQ9WM;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 4C010D2E1F058F0D008184C0;
+						TestTargetID = 4C010DC11F06DF50008184C0;
 					};
 				};
 			};
-			buildConfigurationList = 4C010D2A1F058F0D008184C0 /* Build configuration list for PBXProject "CapTechChallengeTwo" */;
+			buildConfigurationList = 4C010DBD1F06DF4F008184C0 /* Build configuration list for PBXProject "CapTechChallengeTwo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -243,37 +305,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 4C010D261F058F0D008184C0;
-			productRefGroup = 4C010D301F058F0D008184C0 /* Products */;
+			mainGroup = 4C010DB91F06DF4F008184C0;
+			productRefGroup = 4C010DC31F06DF50008184C0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4C010D2E1F058F0D008184C0 /* CapTechChallengeTwo */,
-				4C010D421F058F0D008184C0 /* CapTechChallengeTwoTests */,
-				4C010D4D1F058F0D008184C0 /* CapTechChallengeTwoUITests */,
+				4C010DC11F06DF50008184C0 /* CapTechChallengeTwo */,
+				4C010DD81F06DF50008184C0 /* CapTechChallengeTwoTests */,
+				4C010DE31F06DF50008184C0 /* CapTechChallengeTwoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4C010D2D1F058F0D008184C0 /* Resources */ = {
+		4C010DC01F06DF50008184C0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C010D3D1F058F0D008184C0 /* LaunchScreen.storyboard in Resources */,
-				4C010D3A1F058F0D008184C0 /* Assets.xcassets in Resources */,
-				4C010D381F058F0D008184C0 /* Main.storyboard in Resources */,
+				4C010DD31F06DF50008184C0 /* LaunchScreen.storyboard in Resources */,
+				4C010DD01F06DF50008184C0 /* Assets.xcassets in Resources */,
+				4C010DCB1F06DF50008184C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C010D411F058F0D008184C0 /* Resources */ = {
+		4C010DD71F06DF50008184C0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C010D4C1F058F0D008184C0 /* Resources */ = {
+		4C010DE21F06DF50008184C0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -283,62 +345,64 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4C010D2B1F058F0D008184C0 /* Sources */ = {
+		4C010DBE1F06DF50008184C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C010DA51F05A5D6008184C0 /* CoreDataStack.swift in Sources */,
-				4C010D621F059B48008184C0 /* earthquakeTableViewController.swift in Sources */,
-				4C010D351F058F0D008184C0 /* ViewController.swift in Sources */,
-				4C010D651F05A16F008184C0 /* Model.xcdatamodeld in Sources */,
-				4C010D331F058F0D008184C0 /* AppDelegate.swift in Sources */,
+				4C010E011F06FAE1008184C0 /* CoreDataStack.swift in Sources */,
+				4C010DCE1F06DF50008184C0 /* CapTechChallengeTwo.xcdatamodeld in Sources */,
+				4C010DC81F06DF50008184C0 /* ViewController.swift in Sources */,
+				4C010E0F1F07048C008184C0 /* EarthquakeTableViewController.swift in Sources */,
+				4C010DFE1F06EDED008184C0 /* EarthquakeDataManager.swift in Sources */,
+				4C010E0D1F07005A008184C0 /* AppGlobals.swift in Sources */,
+				4C010DC61F06DF50008184C0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C010D3F1F058F0D008184C0 /* Sources */ = {
+		4C010DD51F06DF50008184C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C010D481F058F0D008184C0 /* CapTechChallengeTwoTests.swift in Sources */,
+				4C010DDE1F06DF50008184C0 /* CapTechChallengeTwoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C010D4A1F058F0D008184C0 /* Sources */ = {
+		4C010DE01F06DF50008184C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C010D531F058F0D008184C0 /* CapTechChallengeTwoUITests.swift in Sources */,
+				4C010DE91F06DF50008184C0 /* CapTechChallengeTwoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4C010D451F058F0D008184C0 /* PBXTargetDependency */ = {
+		4C010DDB1F06DF50008184C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4C010D2E1F058F0D008184C0 /* CapTechChallengeTwo */;
-			targetProxy = 4C010D441F058F0D008184C0 /* PBXContainerItemProxy */;
+			target = 4C010DC11F06DF50008184C0 /* CapTechChallengeTwo */;
+			targetProxy = 4C010DDA1F06DF50008184C0 /* PBXContainerItemProxy */;
 		};
-		4C010D501F058F0D008184C0 /* PBXTargetDependency */ = {
+		4C010DE61F06DF50008184C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4C010D2E1F058F0D008184C0 /* CapTechChallengeTwo */;
-			targetProxy = 4C010D4F1F058F0D008184C0 /* PBXContainerItemProxy */;
+			target = 4C010DC11F06DF50008184C0 /* CapTechChallengeTwo */;
+			targetProxy = 4C010DE51F06DF50008184C0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4C010D361F058F0D008184C0 /* Main.storyboard */ = {
+		4C010DC91F06DF50008184C0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4C010D371F058F0D008184C0 /* Base */,
+				4C010DCA1F06DF50008184C0 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		4C010D3B1F058F0D008184C0 /* LaunchScreen.storyboard */ = {
+		4C010DD11F06DF50008184C0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4C010D3C1F058F0D008184C0 /* Base */,
+				4C010DD21F06DF50008184C0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -346,7 +410,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4C010D551F058F0D008184C0 /* Debug */ = {
+		4C010DEB1F06DF50008184C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -397,7 +461,7 @@
 			};
 			name = Debug;
 		};
-		4C010D561F058F0D008184C0 /* Release */ = {
+		4C010DEC1F06DF50008184C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -441,7 +505,7 @@
 			};
 			name = Release;
 		};
-		4C010D581F058F0D008184C0 /* Debug */ = {
+		4C010DEE1F06DF50008184C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -454,7 +518,7 @@
 			};
 			name = Debug;
 		};
-		4C010D591F058F0D008184C0 /* Release */ = {
+		4C010DEF1F06DF50008184C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -467,7 +531,7 @@
 			};
 			name = Release;
 		};
-		4C010D5B1F058F0D008184C0 /* Debug */ = {
+		4C010DF11F06DF50008184C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -482,7 +546,7 @@
 			};
 			name = Debug;
 		};
-		4C010D5C1F058F0D008184C0 /* Release */ = {
+		4C010DF21F06DF50008184C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -497,7 +561,7 @@
 			};
 			name = Release;
 		};
-		4C010D5E1F058F0D008184C0 /* Debug */ = {
+		4C010DF41F06DF50008184C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -511,7 +575,7 @@
 			};
 			name = Debug;
 		};
-		4C010D5F1F058F0D008184C0 /* Release */ = {
+		4C010DF51F06DF50008184C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -528,53 +592,53 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4C010D2A1F058F0D008184C0 /* Build configuration list for PBXProject "CapTechChallengeTwo" */ = {
+		4C010DBD1F06DF4F008184C0 /* Build configuration list for PBXProject "CapTechChallengeTwo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C010D551F058F0D008184C0 /* Debug */,
-				4C010D561F058F0D008184C0 /* Release */,
+				4C010DEB1F06DF50008184C0 /* Debug */,
+				4C010DEC1F06DF50008184C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C010D571F058F0D008184C0 /* Build configuration list for PBXNativeTarget "CapTechChallengeTwo" */ = {
+		4C010DED1F06DF50008184C0 /* Build configuration list for PBXNativeTarget "CapTechChallengeTwo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C010D581F058F0D008184C0 /* Debug */,
-				4C010D591F058F0D008184C0 /* Release */,
+				4C010DEE1F06DF50008184C0 /* Debug */,
+				4C010DEF1F06DF50008184C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		4C010D5A1F058F0D008184C0 /* Build configuration list for PBXNativeTarget "CapTechChallengeTwoTests" */ = {
+		4C010DF01F06DF50008184C0 /* Build configuration list for PBXNativeTarget "CapTechChallengeTwoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C010D5B1F058F0D008184C0 /* Debug */,
-				4C010D5C1F058F0D008184C0 /* Release */,
+				4C010DF11F06DF50008184C0 /* Debug */,
+				4C010DF21F06DF50008184C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		4C010D5D1F058F0D008184C0 /* Build configuration list for PBXNativeTarget "CapTechChallengeTwoUITests" */ = {
+		4C010DF31F06DF50008184C0 /* Build configuration list for PBXNativeTarget "CapTechChallengeTwoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C010D5E1F058F0D008184C0 /* Debug */,
-				4C010D5F1F058F0D008184C0 /* Release */,
+				4C010DF41F06DF50008184C0 /* Debug */,
+				4C010DF51F06DF50008184C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		4C010D631F05A16F008184C0 /* Model.xcdatamodeld */ = {
+		4C010DCC1F06DF50008184C0 /* CapTechChallengeTwo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				4C010D641F05A16F008184C0 /* Model.xcdatamodel */,
+				4C010DCD1F06DF50008184C0 /* CapTechChallengeTwo.xcdatamodel */,
 			);
-			currentVersion = 4C010D641F05A16F008184C0 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
+			currentVersion = 4C010DCD1F06DF50008184C0 /* CapTechChallengeTwo.xcdatamodel */;
+			path = CapTechChallengeTwo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 4C010D271F058F0D008184C0 /* Project object */;
+	rootObject = 4C010DBA1F06DF4F008184C0 /* Project object */;
 }
