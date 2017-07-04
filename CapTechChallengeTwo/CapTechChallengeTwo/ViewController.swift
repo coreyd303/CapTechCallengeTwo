@@ -15,9 +15,10 @@ class ViewController: UIViewController {
     super.viewDidLoad()
 
     let dataManager: EarthquakeDataManager = EarthquakeDataManager.shared!
+    let client: HTTPClient = HTTPClient.shared!
 
     dataManager.clearEarthquakeData()
-    dataManager.requestEarthquakeData() { data in
+    client.requestEarthquakeData() { data in
       if let data = data {
         dataManager.parseJSON(data: data)
       } else {
@@ -29,11 +30,6 @@ class ViewController: UIViewController {
       }
     }
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-  }
-
     
   @IBAction func imageAttribution(_ sender: Any) {
 

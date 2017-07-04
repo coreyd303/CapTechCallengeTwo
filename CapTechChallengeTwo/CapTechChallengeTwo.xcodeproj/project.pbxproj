@@ -19,6 +19,7 @@
 		4C010E011F06FAE1008184C0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010E001F06FAE1008184C0 /* CoreDataStack.swift */; };
 		4C010E0D1F07005A008184C0 /* AppGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010E0C1F07005A008184C0 /* AppGlobals.swift */; };
 		4C010E0F1F07048C008184C0 /* EarthquakeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010E0E1F07048C008184C0 /* EarthquakeTableViewController.swift */; };
+		4C2D13B01F0B346800B3AAB6 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2D13AF1F0B346800B3AAB6 /* HTTPClient.swift */; };
 		4C3AD1091F0AAA83007BE9B8 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AD1081F0AAA83007BE9B8 /* CustomTableViewCell.swift */; };
 		4C3AD10C1F0AE98A007BE9B8 /* ArrayEarthquake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AD10B1F0AE98A007BE9B8 /* ArrayEarthquake.swift */; };
 		4C3AD10E1F0AED58007BE9B8 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AD10D1F0AED58007BE9B8 /* Color.swift */; };
@@ -62,6 +63,7 @@
 		4C010E001F06FAE1008184C0 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		4C010E0C1F07005A008184C0 /* AppGlobals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGlobals.swift; sourceTree = "<group>"; };
 		4C010E0E1F07048C008184C0 /* EarthquakeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthquakeTableViewController.swift; sourceTree = "<group>"; };
+		4C2D13AF1F0B346800B3AAB6 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		4C3AD1081F0AAA83007BE9B8 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		4C3AD10B1F0AE98A007BE9B8 /* ArrayEarthquake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayEarthquake.swift; sourceTree = "<group>"; };
 		4C3AD10D1F0AED58007BE9B8 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 		4C010DFF1F06EE06008184C0 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				4C2D13AF1F0B346800B3AAB6 /* HTTPClient.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 			files = (
 				4C3AD11A1F0B02FB007BE9B8 /* EarthquakeAnnotation.swift in Sources */,
 				4C3AD1101F0AFED3007BE9B8 /* MapViewController.swift in Sources */,
+				4C2D13B01F0B346800B3AAB6 /* HTTPClient.swift in Sources */,
 				4C010E011F06FAE1008184C0 /* CoreDataStack.swift in Sources */,
 				4C3AD10C1F0AE98A007BE9B8 /* ArrayEarthquake.swift in Sources */,
 				4C010DCE1F06DF50008184C0 /* CapTechChallengeTwo.xcdatamodeld in Sources */,

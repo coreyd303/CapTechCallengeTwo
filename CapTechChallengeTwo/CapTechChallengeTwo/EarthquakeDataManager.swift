@@ -37,22 +37,6 @@ class EarthquakeDataManager {
     }
   }
 
-  func requestEarthquakeData(completion: @escaping (Data?) -> ()) {
-    if let url = URL(string: "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson") {
-      let request = NSMutableURLRequest(url: url)
-
-      URLSession.shared.dataTask(with: request as URLRequest) {
-        (data, response, error) in
-        if error != nil {
-          os_log("request failed to complete", type: .error)
-          return completion(nil)
-        } else  {
-          return completion(data)
-        }
-        }.resume()
-    }
-  }
-
   func parseJSON(data: Data, shouldUpdateRecords: Bool = false) {
     let json = try? JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary
     let theDataArray = json??["features"] as! NSArray

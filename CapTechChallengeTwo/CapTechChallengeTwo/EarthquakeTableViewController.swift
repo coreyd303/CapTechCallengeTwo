@@ -15,6 +15,7 @@ class EarthquakeTableViewController: UITableViewController {
   var refresher: UIRefreshControl!
 
   let dataManager: EarthquakeDataManager = EarthquakeDataManager.shared!
+  let client: HTTPClient = HTTPClient.shared!
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -94,7 +95,7 @@ class EarthquakeTableViewController: UITableViewController {
 
 
   func refreshData(_ refreshControl: UIRefreshControl) {
-      self.dataManager.requestEarthquakeData() { data in
+      self.client.requestEarthquakeData() { data in
         if let data = data {
           self.dataManager.parseJSON(data: data, shouldUpdateRecords: true)
         } else {
