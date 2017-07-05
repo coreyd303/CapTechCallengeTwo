@@ -65,4 +65,5 @@ _When completed the student should have an understanding of the following concep
   * Add your project to your new repo
 
 #### 4. Extension Challenges
--- TBD --
+1. Add testing to the application, using UI, Unit, or a mix of both
+2. Add a map to the application that displays quakes that have a magnitude of 3.5 or greater as annotations
