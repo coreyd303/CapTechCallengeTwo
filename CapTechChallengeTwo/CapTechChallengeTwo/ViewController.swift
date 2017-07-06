@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     dataManager.clearEarthquakeData()
     client.requestEarthquakeData() { data in
       if let data = data {
-        dataManager.parseJSON(data: data)
+        let _ = dataManager.parseAndSaveJSON(data: data)
       } else {
         let alert = UIAlertController(title: "Network Error",
                                       message: "We were unable to retrive the data, please check your network connection and try again",

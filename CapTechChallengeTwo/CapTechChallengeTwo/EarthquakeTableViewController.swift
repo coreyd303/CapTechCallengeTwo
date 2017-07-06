@@ -35,13 +35,7 @@ class EarthquakeTableViewController: UITableViewController {
     performSegue(withIdentifier: "mapViewSegue", sender: nil)
   }
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
   override func numberOfSections(in tableView: UITableView) -> Int {
-    // #warning Incomplete implementation, return the number of sections
     return 1
   }
 
@@ -93,11 +87,10 @@ class EarthquakeTableViewController: UITableViewController {
     }
   }
 
-
   func refreshData(_ refreshControl: UIRefreshControl) {
       self.client.requestEarthquakeData() { data in
         if let data = data {
-          self.dataManager.parseJSON(data: data, shouldUpdateRecords: true)
+          let _ = self.dataManager.parseAndSaveJSON(data: data, shouldUpdateRecords: true)
         } else {
           let alert = UIAlertController(title: "Network Error",
                                         message: "We were unable to retrive the data, please check your network connection and try again",

@@ -13,7 +13,6 @@
 		4C010DCE1F06DF50008184C0 /* CapTechChallengeTwo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C010DCC1F06DF50008184C0 /* CapTechChallengeTwo.xcdatamodeld */; };
 		4C010DD01F06DF50008184C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C010DCF1F06DF50008184C0 /* Assets.xcassets */; };
 		4C010DD31F06DF50008184C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C010DD11F06DF50008184C0 /* LaunchScreen.storyboard */; };
-		4C010DDE1F06DF50008184C0 /* CapTechChallengeTwoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010DDD1F06DF50008184C0 /* CapTechChallengeTwoTests.swift */; };
 		4C010DE91F06DF50008184C0 /* CapTechChallengeTwoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010DE81F06DF50008184C0 /* CapTechChallengeTwoUITests.swift */; };
 		4C010DFE1F06EDED008184C0 /* EarthquakeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010DFD1F06EDED008184C0 /* EarthquakeDataManager.swift */; };
 		4C010E011F06FAE1008184C0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010E001F06FAE1008184C0 /* CoreDataStack.swift */; };
@@ -25,6 +24,8 @@
 		4C3AD10E1F0AED58007BE9B8 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AD10D1F0AED58007BE9B8 /* Color.swift */; };
 		4C3AD1101F0AFED3007BE9B8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AD10F1F0AFED3007BE9B8 /* MapViewController.swift */; };
 		4C3AD11A1F0B02FB007BE9B8 /* EarthquakeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AD1181F0B02FB007BE9B8 /* EarthquakeAnnotation.swift */; };
+		4C7825FC1F0D56DF00892233 /* EarthquakeDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7825FB1F0D56DF00892233 /* EarthquakeDataManagerTests.swift */; };
+		4C7825FE1F0D582E00892233 /* Request.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C7825FD1F0D582E00892233 /* Request.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +55,6 @@
 		4C010DD21F06DF50008184C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C010DD41F06DF50008184C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C010DD91F06DF50008184C0 /* CapTechChallengeTwoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapTechChallengeTwoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C010DDD1F06DF50008184C0 /* CapTechChallengeTwoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapTechChallengeTwoTests.swift; sourceTree = "<group>"; };
 		4C010DDF1F06DF50008184C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C010DE41F06DF50008184C0 /* CapTechChallengeTwoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapTechChallengeTwoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C010DE81F06DF50008184C0 /* CapTechChallengeTwoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapTechChallengeTwoUITests.swift; sourceTree = "<group>"; };
@@ -69,6 +69,8 @@
 		4C3AD10D1F0AED58007BE9B8 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		4C3AD10F1F0AFED3007BE9B8 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4C3AD1181F0B02FB007BE9B8 /* EarthquakeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EarthquakeAnnotation.swift; path = ../EarthquakeAnnotation.swift; sourceTree = "<group>"; };
+		4C7825FB1F0D56DF00892233 /* EarthquakeDataManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthquakeDataManagerTests.swift; sourceTree = "<group>"; };
+		4C7825FD1F0D582E00892233 /* Request.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Request.json; path = ../../../../Desktop/Request.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +139,9 @@
 		4C010DDC1F06DF50008184C0 /* CapTechChallengeTwoTests */ = {
 			isa = PBXGroup;
 			children = (
-				4C010DDD1F06DF50008184C0 /* CapTechChallengeTwoTests.swift */,
-				4C010DDF1F06DF50008184C0 /* Info.plist */,
+				4C7825F81F0D567D00892233 /* Cases */,
+				4C7825F91F0D568D00892233 /* Data */,
+				4C7825FA1F0D569200892233 /* Supporting Files */,
 			);
 			path = CapTechChallengeTwoTests;
 			sourceTree = "<group>";
@@ -246,6 +249,30 @@
 			name = Objects;
 			sourceTree = "<group>";
 		};
+		4C7825F81F0D567D00892233 /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				4C7825FB1F0D56DF00892233 /* EarthquakeDataManagerTests.swift */,
+			);
+			name = Cases;
+			sourceTree = "<group>";
+		};
+		4C7825F91F0D568D00892233 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4C7825FD1F0D582E00892233 /* Request.json */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		4C7825FA1F0D569200892233 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C010DDF1F06DF50008184C0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -320,6 +347,7 @@
 					4C010DD81F06DF50008184C0 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 3Q4M6DQ9WM;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 4C010DC11F06DF50008184C0;
 					};
@@ -366,6 +394,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C7825FE1F0D582E00892233 /* Request.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C010DDE1F06DF50008184C0 /* CapTechChallengeTwoTests.swift in Sources */,
+				4C7825FC1F0D56DF00892233 /* EarthquakeDataManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,11 +605,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3Q4M6DQ9WM;
 				INFOPLIST_FILE = CapTechChallengeTwoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = captech.CapTechChallengeTwoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CapTechChallengeTwo.app/CapTechChallengeTwo";
 			};
@@ -591,6 +622,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3Q4M6DQ9WM;
 				INFOPLIST_FILE = CapTechChallengeTwoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

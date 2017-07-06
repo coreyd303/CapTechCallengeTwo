@@ -37,38 +37,47 @@ class EarthquakeDataManager {
     }
   }
 
-  func parseJSON(data: Data, shouldUpdateRecords: Bool = false) {
-    let json = try? JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary
-    let theDataArray = json??["features"] as! NSArray
+  func parseAndSaveJSON(data: Data, shouldUpdateRecords: Bool = false) -> Result {
+    do {
+      let json = try JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary
+      let theDataArray = json?["features"] as! NSArray
 
-    for element in theDataArray {
-      let asDict      = element as? NSDictionary
-      let properties  = asDict?["properties"] as! NSDictionary
-      let geometry    = asDict?["geometry"] as! NSDictionary
-      let coordinates = geometry["coordinates"] as! NSArray
-      let adjTime     = (properties["time"] as! Int) / 1000
+      for element in theDataArray {
+        let asDict      = element as? NSDictionary
+        let properties  = asDict?["properties"] as! NSDictionary
+        let geometry    = asDict?["geometry"] as! NSDictionary
+        let coordinates = geometry["coordinates"] as! NSArray
+        let adjTime     = (properties["time"] as! Int) / 1000
 
-      if(shouldUpdateRecords) {
-        do {
-          let title = properties["title"] as! String
-          let thePredicate = NSPredicate(format: "title == %@", title)
-          var request : NSFetchRequest<NSFetchRequestResult>? = nil
-          request = NSFetchRequest<NSFetchRequestResult>(entityName: "Earthquake")
-          request?.predicate = thePredicate
-          let result = try managedContext.fetch(request!)
+        if(shouldUpdateRecords) {
+          do {
+            let title = properties["title"] as! String
+            let thePredicate = NSPredicate(format: "title == %@", title)
+            var request : NSFetchRequest<NSFetchRequestResult>? = nil
+            request = NSFetchRequest<NSFetchRequestResult>(entityName: "Earthquake")
+            request?.predicate = thePredicate
+            let result = try managedContext.fetch(request!)
 
-          if(result.count == 0) {
-            creatyDataEntity(properties: properties, adjTime: adjTime, coordinates: coordinates)
+            if(result.count == 0) {
+              creatyDataEntity(properties: properties, adjTime: adjTime, coordinates: coordinates)
+            }
+          } catch {
+            os_log("Records failed to return", type: .error)
           }
-        } catch {
-          os_log("Records failed to return", type: .error)
+        } else {
+          creatyDataEntity(properties: properties, adjTime: adjTime, coordinates: coordinates)
         }
-      } else {
-        creatyDataEntity(properties: properties, adjTime: adjTime, coordinates: coordinates)
       }
-    }
 
-    coreDataStack.saveContext()
+      coreDataStack.saveContext()
+
+      return .success(true)
+
+    } catch let error {
+
+      os_log(error as! StaticString, type: .error)
+      return .failure(error)
+    }
     
   }
 
@@ -83,6 +92,11 @@ class EarthquakeDataManager {
     if let magnitude = properties["mag"] as? Double {
       theEarthquake.magnitude  = magnitude
     }
+  }
+
+  enum Result {
+    case success(Bool)
+    case failure(Error)
   }
 
 }
